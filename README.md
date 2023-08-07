@@ -164,12 +164,12 @@ Within infra/ui.yml you should be able to find the below code. When modifying yo
 apiVersion: app.appvia.io/v2beta1
 kind: AppComponent
 metadata:
-  name: app-name-placeholder
+  name: rbc-test-app-2
 spec:
-  application: app-name-placeholder
+  application: rbc-test-app-2
   container:
     containers:
-    - image: ghcr.io/digital-garage-icl/repo-name-placeholder:latest
+    - image: ghcr.io/digital-garage-icl/student-rbc-test-app-2:latest
       name: ui
       ports:
       - containerPort: 8080
@@ -182,7 +182,7 @@ spec:
       container: ui
       port: 8080
     tls: true
-  name: app-name-placeholder
+  name: rbc-test-app-2
   type: Container
 ```
 
